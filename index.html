@@ -62,55 +62,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Home Page Live Demo</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Divi Style</title>
+    <link rel="stylesheet" href="/css/style.css">
+    </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Simple Home Page Live Demo</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Basic Layouts</a></li>
-          <li><a href="#">Sales</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Maintenance Mode</a></li>
-          <li><a href="#">Coming Soon</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About Me</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Contact Us</a>
+            <a href="#" class="nav-link">Portfolio</a>
+            <a href="#" class="nav-link">Project</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link">Basic Layouts ▼</a>
+            </div>
+            <a href="#" class="nav-link">Sales</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Maintenance Mode</a>
+            <a href="#" class="nav-link">Coming Soon</a>
+            <span class="cart-icon">🛒</span>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Welcome To My Website</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In in risus eget lectus suscipit malesuada. 
-        Maecenas ut urna mollis, aliquam eros at, laoreet metus.
-      </p>
-      <a href="#" class="btn">Enter</a>
-    </div>
-  </section>
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Welcome To My Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, in in risus eget lectus suscipit malesuada. Maecenas ut urna mollis, aliquam eros et, laoreet metus.</p>
+                <button class="enter-button">Enter</button>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h3>We Are a Company of Passionate Designers and Developers</h3>
-  </section>
-  <section class="contact-section"> <div class="contact-left"> <h2>Drop Me a Line</h2> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus, lacus sed luctus suscipit, malesuada ut urna mollis. Aliquam eros nisi, facilisis nec enim in, varius accumsan lacus. </p> <a href="#" class="contact-btn">Contact</a> </div> <div class="contact-right"> <div class="info-box"> <i class="fa-solid fa-file-lines"></i> <h3>Lorem Ipsum</h3> <p> Divi will change the way you build websites forever. The advanced builder makes it possible to build truly dynamic pages without learning code. </p> </div> <div class="info-box"> <i class="fa-solid fa-location-dot"></i> <h3>Lorem Ipsum</h3> <p> Divi will change the way you build websites forever. The advanced builder makes it possible to build truly dynamic pages without learning code. </p> </div> <div class="info-box"> <i class="fa-solid fa-sliders"></i> <h3>Lorem Ipsum</h3> <p> Divi will change the way you build websites forever. The advanced builder makes it possible to build truly dynamic pages without learning code. </p> </div> </div> </section>
+    <section class="tagline-section">
+        <p>We Are a Company of **Passionate Designers and Developers**</p>
+    </section>
+   
+    <section class="features-section">
+        <div class="feature-row">
+            <div class="feature-box">
+                <div class="icon-circle">📄</div>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon-circle">📍</div>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon-circle">💬</div>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon-circle">⚙️</div>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cta-section">
+        <div class="cta-content">
+            <h2>Drop Me a Line</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, in in risus eget lectus suscipit malesuada. Maecenas ut urna mollis, aliquam eros et, laoreet metus.</p>
+            <button class="contact-button">Contact</button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>Designed by **Elegant Themes** | Powered by **WordPress**</p>
+    </footer>
 
 </body>
+<<<<<<< HEAD
 </html>
 >>>>>>> d9eaf9f (Iniciar proyecto base)
+=======
+</html>
+>>>>>>> 101f62a (Modificar estructura HTML y actualizar estilos CSS)
