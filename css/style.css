@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* RESET */
 * {
   margin: 0;
@@ -236,4 +237,244 @@ body {
     max-width: 100%;
     margin-bottom: 20px;
   }
+=======
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #007aff;
+}
+
+/* HERO */
+.hero {
+  /* Fondo más claro para que parezca más un banner simple como en la imagen */
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007aff;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid #007aff;
+  background: #007aff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #007aff;
+}
+
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 60px 20px 20px; /* Reducido el padding inferior para unir con la sección de íconos */
+  background: #f9f9f9;
+}
+
+.about h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 30px; /* Separación con la sección de íconos */
+}
+
+
+/* --- CONTACT SECTION - MODIFICADO para que se vea como las imágenes --- */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* Eliminamos min-height para que se ajuste al contenido */
+}
+
+/* LADO IZQUIERDO (AZUL) - Ahora en la parte inferior como un banner */
+.contact-left {
+  background-color: #2196f3;
+  color: white;
+  width: 100%; /* Ocupa todo el ancho */
+  order: 2; /* Lo mueve a la parte inferior */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-left h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: transparent; /* Fondo transparente */
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 2px solid white; /* Borde blanco */
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #2196f3;
+}
+
+/* LADO DERECHO (BLANCO) - Los 4 íconos */
+.contact-right {
+  width: 100%; /* Ocupa todo el ancho */
+  order: 1; /* Lo mantiene en la parte superior */
+  background-color: #f9f9f9; /* Fondo similar al "ABOUT" */
+  padding: 0 40px 60px; /* Espacio solo en los lados y abajo */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos fluyan */
+  justify-content: center; /* Centra los bloques en el medio */
+  gap: 30px; /* Espacio entre los bloques */
+}
+
+.info-box {
+  flex: 1 1 200px; /* Permite que cada caja crezca, pero con un mínimo de 200px de ancho */
+  max-width: 280px; /* Limita el ancho máximo en pantallas grandes */
+  padding: 20px;
+  text-align: center; /* Centrar el contenido dentro de la caja */
+  background-color: #fff; /* Fondo blanco para las cajas de contenido */
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.05);  Puedes añadir una sombra si quieres más separación visual */
+}
+
+.info-box i {
+  font-size: 3.5rem; /* Íconos más grandes */
+  color: #2196f3;
+  margin-bottom: 15px;
+}
+
+.info-box h3 {
+  font-size: 1.3rem; /* Títulos más grandes */
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.info-box p {
+  color: #777;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    /* En tabletas o similar, los 4 íconos se pueden poner en 2x2 */
+    .info-box {
+        flex: 1 1 40%; /* Dos columnas en la mayoría de las tabletas */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+  /* El menú de navegación se apila */
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar .container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  /* Los íconos se apilan verticalmente */
+  .info-box {
+    flex: 1 1 100%; /* Una columna en móviles */
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+>>>>>>> d9eaf9f (Iniciar proyecto base)
 }
