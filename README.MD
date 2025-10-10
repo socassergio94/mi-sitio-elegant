@@ -48,5 +48,13 @@ img/: Carpeta donde se almacenan todas las imágenes del proyecto.
 docs/: Carpeta para almacenar archivos de documentación, como capturas de pantalla.
 
 .gitignore: Archivo que especifica qué archivos y carpetas deben ser ignorados por Git.
+## Colaboración
+
+### Fork y Pull Request
+
+1. **Fork del repositorio de un compañero/a**: Hice un fork del repositorio de mi compañero/a [segundo-repositorio](https://github.com/barbiesamurai/segundo-repositorio).
+2. **Pull Request enviado**: Hice un Pull Request con mejoras en el repositorio original. Puedes ver el PR [aquí](https://github.com/barbiesamurai/segundo-repositorio/pull/1).
+3. **Descripción de cambios**: He agregado un texto descriptivo y realizado algunos ajustes en el archivo `index.html`.
 
 README.md: Este archivo con la descripción y documentación del proyecto.
+
