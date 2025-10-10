@@ -1,239 +1,188 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
+/* ** Estilos Generales y Reseteo ** */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: Arial, sans-serif; /* Reemplaza con la fuente exacta de Divi si la conoces */
+    margin: 0;
+    padding: 0;
+    color: #444;
+    line-height: 1.6;
+    text-align: center; /* Centramos todo el contenido principal como en la imagen */
 }
 
-/* NAVBAR */
-.navbar {
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
+/* ** Header/Navegación ** */
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
 }
 
-.logo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #000;
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
+.nav-link {
+    color: #333;
+    padding: 5px 0;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+.cart-icon {
+    font-size: 18px;
 }
 
-.menu a:hover,
-.menu a.active {
-  color: #007aff;
+/* ** Sección de Bienvenida (Hero) ** */
+.hero-section {
+    padding: 80px 20px; /* Espacio alrededor del banner */
+    background-color: #f7f7f7; /* Color de fondo general de la página */
 }
 
-/* HERO */
-.hero {
-  /* Fondo más claro para que parezca más un banner simple como en la imagen */
-  background: #fff;
-  color: #333;
-  text-align: center;
-  padding: 50px 20px;
-  border-bottom: 1px solid #eee;
+.hero-overlay {
+    /* El degradado azul vibrante de la imagen */
+    background: linear-gradient(to bottom, #1d4ed8, #2563eb, #3b82f6);
+    color: white;
+    padding: 80px 40px;
+    margin: 0 auto;
+    max-width: 80%; /* Controla el ancho del banner azul */
+    border-radius: 4px; /* Un poco de borde redondeado si lo tuviera */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content {
-  max-width: 700px;
-  margin: auto;
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
-.hero h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #007aff;
+.hero-content p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
 }
 
-.hero p {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
+.enter-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
 }
 
-.btn {
-  display: inline-block;
-  border: 2px solid #007aff;
-  background: #007aff;
-  padding: 10px 30px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-weight: 500;
+/* ** Frase del Desarrollador ** */
+.tagline-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    font-size: 20px;
+    color: #333;
+    font-style: italic;
+}
+.tagline-section p {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.btn:hover {
-  background: #fff;
-  color: #007aff;
+/* ** Sección de Características (Features) ** */
+.features-section {
+    padding: 60px 20px;
+    background-color: white; /* Asume un fondo blanco entre secciones */
 }
 
-/* ABOUT */
-.about {
-  text-align: center;
-  padding: 60px 20px 20px; /* Reducido el padding inferior para unir con la sección de íconos */
-  background: #f9f9f9;
+.feature-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about h3 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 30px; /* Separación con la sección de íconos */
+.feature-box {
+    flex: 1; /* Distribuye el espacio entre las 4 cajas */
+    max-width: 280px;
+    padding: 20px;
+    text-align: center;
 }
 
-
-/* --- CONTACT SECTION - MODIFICADO para que se vea como las imágenes --- */
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  /* Eliminamos min-height para que se ajuste al contenido */
-}
-
-/* LADO IZQUIERDO (AZUL) - Ahora en la parte inferior como un banner */
-.contact-left {
-  background-color: #2196f3;
-  color: white;
-  width: 100%; /* Ocupa todo el ancho */
-  order: 2; /* Lo mueve a la parte inferior */
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.contact-left h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.contact-left p {
-  max-width: 800px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.contact-btn {
-  display: inline-block;
-  background-color: transparent; /* Fondo transparente */
-  color: white;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  border: 2px solid white; /* Borde blanco */
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-}
-
-.contact-btn:hover {
-  background-color: white;
-  color: #2196f3;
-}
-
-/* LADO DERECHO (BLANCO) - Los 4 íconos */
-.contact-right {
-  width: 100%; /* Ocupa todo el ancho */
-  order: 1; /* Lo mantiene en la parte superior */
-  background-color: #f9f9f9; /* Fondo similar al "ABOUT" */
-  padding: 0 40px 60px; /* Espacio solo en los lados y abajo */
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos fluyan */
-  justify-content: center; /* Centra los bloques en el medio */
-  gap: 30px; /* Espacio entre los bloques */
-}
-
-.info-box {
-  flex: 1 1 200px; /* Permite que cada caja crezca, pero con un mínimo de 200px de ancho */
-  max-width: 280px; /* Limita el ancho máximo en pantallas grandes */
-  padding: 20px;
-  text-align: center; /* Centrar el contenido dentro de la caja */
-  background-color: #fff; /* Fondo blanco para las cajas de contenido */
-  border-radius: 4px;
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.05);  Puedes añadir una sombra si quieres más separación visual */
-}
-
-.info-box i {
-  font-size: 3.5rem; /* Íconos más grandes */
-  color: #2196f3;
-  margin-bottom: 15px;
-}
-
-.info-box h3 {
-  font-size: 1.3rem; /* Títulos más grandes */
-  margin-bottom: 8px;
-  color: #444;
-}
-
-.info-box p {
-  color: #777;
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-    /* En tabletas o similar, los 4 íconos se pueden poner en 2x2 */
-    .info-box {
-        flex: 1 1 40%; /* Dos columnas en la mayoría de las tabletas */
-        max-width: 45%;
-    }
-}
-
-@media (max-width: 768px) {
-  /* El menú de navegación se apila */
-  .menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .navbar .container {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
-  }
-  .logo {
-    margin-bottom: 10px;
-  }
-
-  /* Los íconos se apilan verticalmente */
-  .info-box {
-    flex: 1 1 100%; /* Una columna en móviles */
-    max-width: 100%;
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #2563eb; /* Borde azul para el círculo del ícono */
+    color: #2563eb;
+    font-size: 30px; /* Para los íconos emoji de ejemplo */
     margin-bottom: 20px;
-  }
+}
+
+.feature-box h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ** Sección de Contacto (Call to Action) ** */
+.contact-cta-section {
+    background-color: #f7f7f7; /* Fondo entre secciones */
+    padding: 40px 20px;
+}
+
+.cta-content {
+    /* El degradado azul oscuro para la sección de contacto */
+    background: linear-gradient(to right, #1d4ed8, #2563eb);
+    color: white;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 80%; /* Ancho similar al banner principal */
+    border-radius: 4px;
+}
+
+.cta-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
+}
+
+.contact-button {
+    background-color: white;
+    color: #2563eb;
+    border: none;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+/* ** Footer Simulado ** */
+.main-footer {
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #777;
 }
