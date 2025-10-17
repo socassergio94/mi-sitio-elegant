@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+
+---
+<BaseLayout title="Inicio | Mi Landing Astro" description="Bienvenido a mi landing page creada con Astro.">
+  <section class="hero">
+    <h2>Bienvenido a Mi Landing Astro</h2>
+    <p>Proyecto con SEO, transiciones y prefetch.</p>
+  </section>
+  <section class="cards">
+    <Card 
+  title="Diseño Rápido" 
+  text="Creado con Astro y CSS puro." 
+  img="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+/>
+
+    <Card title="SEO Dinámico" text="Cada página tiene título y descripción únicos." img="https://images.pexels.com/photos/9431445/pexels-photo-9431445.jpeg" />
+    <Card title="Transiciones Suaves" text="Experiencia fluida gracias a View Transitions." img="https://images.pexels.com/photos/15399855/pexels-photo-15399855.jpeg" />
+  </section>
+</BaseLayout>
