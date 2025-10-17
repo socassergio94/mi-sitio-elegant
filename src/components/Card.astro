@@ -1,0 +1,11 @@
+---
+const { title, text, img } = Astro.props;
+---
+<div class="card">
+  <picture>
+    <source srcset={img} type="image/webp" />
+    <img src={img} alt={title} loading="lazy" />
+  </picture>
+  <h3>{title}</h3>
+  <p>{text}</p>
+</div>

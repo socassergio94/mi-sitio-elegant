@@ -1,0 +1,22 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeadSEO from '../components/HeadSEO.astro';
+const { title = 'Mi Landing Astro', description = 'Landing page en Astro con SEO y transiciones.' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <HeadSEO title={title} description={description} />
+    <link rel="stylesheet" href="/src/styles/style.css">
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
